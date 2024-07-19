@@ -41,6 +41,10 @@ class Solution {
           dist[i] = (int)(1e9);
         }
         dist[0] = 0;
+							// Shortest path from any src :
+					// 1.Perform toposort and store the order in a stack
+					// 2.Once the source node is given, pop the elements in the stack until the stack's top is the source 
+					// 3. Rest is the same .
         while (!st.isEmpty()) {
           int node = st.peek();
           st.pop();
